@@ -42,8 +42,8 @@ func (m *mockUserPresenter) PresentUpdateUserName(c echo.Context, out *output.Up
 
 // mockErrorPresenter はテスト用のモックエラープレゼンターです。
 type mockErrorPresenter struct {
-	presentBadRequestFunc           func(c echo.Context, message string) error
-	presentInternalServerErrorFunc  func(c echo.Context, err error) error
+	presentBadRequestFunc          func(c echo.Context, message string) error
+	presentInternalServerErrorFunc func(c echo.Context, err error) error
 }
 
 func (m *mockErrorPresenter) PresentBadRequest(c echo.Context, message string) error {

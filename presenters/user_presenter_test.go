@@ -156,16 +156,16 @@ func TestErrorPresenter_PresentBadRequest(t *testing.T) {
 // TestErrorPresenter_PresentInternalServerError はPresentInternalServerErrorの動作をテストします。
 func TestErrorPresenter_PresentInternalServerError(t *testing.T) {
 	tests := []struct {
-		name      string
-		errorMsg  string
+		name     string
+		errorMsg string
 	}{
 		{
-			name:      "通常のエラー",
-			errorMsg:  "database connection error",
+			name:     "通常のエラー",
+			errorMsg: "database connection error",
 		},
 		{
-			name:      "日本語のエラー",
-			errorMsg:  "データベース接続エラー",
+			name:     "日本語のエラー",
+			errorMsg: "データベース接続エラー",
 		},
 	}
 
